@@ -1,17 +1,17 @@
 public class App {
+    private static Object balok;
+
     public static void main(String[] args) throws Exception {
-        Tabung tabung = new Tabung("tabung");
-        Kubus kubus = new Kubus("kubus");
-        Balok balok = new Balok("balok");
+        // Membuat objek untuk masing-masing kelas
+        Tabung tabung = new Tabung("Tabung");
+        Kubus kubus = new Kubus("Kubus");
 
-        balok.inputNilai();
-        balok.luasPermukaan();
-        balok.volume();
-
+        System.out.println("\nPerhitungan Kubus:");
         kubus.inputNilai();
         kubus.luasPermukaan();
         kubus.volume();
 
+        System.out.println("\nPerhitungan Tabung:");
         tabung.inputNilai();
         tabung.luasPermukaan();
         tabung.volume();
